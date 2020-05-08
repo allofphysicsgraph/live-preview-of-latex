@@ -1,0 +1,34 @@
+<!-- https://jsfiddle.net/mYjrn/1/ -->
+<!-- from https://stackoverflow.com/questions/20876797/create-live-preview-of-form-inputs -->
+<HTML>
+<HEAD>
+
+<script>
+$('.input').keyup(function(){
+   var $this = $(this);
+   $('.'+$this.attr('id')+'').html($this.val());
+});
+</script>
+
+</HEAD>
+<BODY>
+
+<input id="input1" type="text" class="input"/><br/>
+<input id="input2" type="text" class="input"/><br/>
+<input id="input3" type="text" class="input"/><br/>
+
+<div id="preview">
+    <div>Input 1: <span class="input1"></span></div><br/>
+    <div>Input 2: <span class="input2"></span></div><br/>
+    <div>Input 3: <span class="input3"></span></div>
+</div>
+
+<script>
+$('.input').keyup(function(){
+   var $this = $(this);
+   $('.'+$this.attr('id')+'').html($this.val());
+});
+</script>
+
+</BODY>
+</HTML
